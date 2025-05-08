@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Note-Taking Methods Comparison</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Base Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #1a1a1a, #2c2c2c);
+            color: #f5f5f5;
+            line-height: 1.7;
+            opacity: 0;
+            animation: fadeIn 1s ease-in forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #d147a3;
+            text-align: center;
+            margin-bottom: 10px;
+            animation: slideIn 0.8s ease-out;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: normal;
+            color: #ccc;
+            font-size: 1.3em;
+            margin-bottom: 40px;
+        }
+
+        .content {
+            background: rgba(128, 0, 128, 0.6);
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .content p,
+        .content li {
+            margin-bottom: 18px;
+        }
+
+        h3 {
+            color: white;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+            margin-top: 15px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.02);
+        }
+
+        .image-caption {
+            font-style: italic;
+            font-size: 0.85em;
+            color: #bbb;
+            margin-top: 8px;
+            display: block;
+        }
+
+        .footer-nav {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .footer-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #d147a3;
+            font-weight: bold;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+
+        .footer-nav a:hover {
+            color: #ff99ff;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.1em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .image-container img {
+                border-radius: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Note-Taking Methods Comparison</h1>
+        <h2>Explore the Best Techniques for Academic Success</h2>
+
+        <div class="content">
+            <p><strong>Introduction:</strong><br>
+                Imagine your brain as a vast archive, divided into knowledge chambers, each representing a unique method for recording and organizing information. This project showcases four primary note-taking techniques, each presented as a mental archiving system:</p>
+
+            <h3>1. Logbook System — The Cornell Method</h3>
+            <ul>
+                <li><strong>Description:</strong> Resembles a well-organized field notebook. The page is divided into three sections: Main Notes, Key Points, and a Summary.</li>
+                <li><strong>When to Use:</strong> During lectures, for studying theoretical materials, or analyzing detailed and interconnected information.</li>
+                <li><strong>Strengths:</strong> Supports effective review, enhances summarization and comprehension.</li>
+            </ul>
+
+            <h3>2. Neural Maps — Mind Mapping</h3>
+            <ul>
+                <li><strong>Description:</strong> A visual web that begins with a central idea, branching into sub-ideas using lines, colors, and icons.</li>
+                <li><strong>When to Use:</strong> When planning a project or essay, for creative brainstorming, or understanding relationships between concepts.</li>
+                <li><strong>Strengths:</strong> Mimics natural brain thinking, ideal for visual and creative learners.</li>
+            </ul>
+
+            <h3>3. Grid Vision — Charting Method</h3>
+            <ul>
+                <li><strong>Description:</strong> A hierarchical diagram showing the relationship between a main idea and its branching details in sequence.</li>
+                <li><strong>When to Use:</strong> When reading books, summarizing chapters, or creating study plans.</li>
+                <li><strong>Strengths:</strong> Highlights logical structure, perfect for methodical learners.</li>
+            </ul>
+
+            <h3>4. Path Maps — Structured Outlining</h3>
+            <ul>
+                <li><strong>Description:</strong> A sequential outline that organizes topics and subtopics in a clear hierarchy.</li>
+                <li><strong>When to Use:</strong> For taking notes during structured lessons, preparing outlines for essays, or reviewing complex subjects.</li>
+                <li><strong>Strengths:</strong> Emphasizes order and clarity, best suited for analytical thinkers.</li>
+            </ul>
+
+            <h3>Integration of Systems</h3>
+            <p>Like interconnected archive rooms, these four systems can work together effectively:</p>
+            <ul>
+                <li><strong>Logbook</strong> to record lectures.</li>
+                <li><strong>Neural Map</strong> to visualize understanding.</li>
+                <li><strong>Grid Vision</strong> to compare concepts.</li>
+                <li><strong>Path Map</strong> to build a final summary.</li>
+            </ul>
+
+            <h3>Conclusion</h3>
+            <p><strong>"Mind Archives"</strong> isn’t just about note-taking — it’s about building intelligent strategies for capturing and organizing reality. Choose the right method for the task, and build your own complete mental archive.</p>
+        </div>
+
+        <div class="image-container">
+            <img src="logo2.png" alt="Memorization Techniques Overview">
+            <span class="image-caption">Overview of popular memorization techniques.</span>
+        </div>
+
+        <div class="footer-nav">
+            <p><a href="jw.html">&larr; Back to Smart Study Hub</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Study Hub</title>
+  <style>
+    /* Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(to right, #1a1a1a, #2c2c2c);
+      color: #f5f5f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      opacity: 0;
+      animation: fadeIn 1s ease-in forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+   /* Header */
+header {
+  background: rgba(26, 26, 26, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  min-height: 80px;        /* Ensures height for visibility */
+}
+
+    .logo {
+      max-width: 180px;
+      transition: transform 0.3s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.05);
+    }
+
+    /* Main Content */
+    main {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      color: #d147a3;
+      margin-bottom: 0.5rem;
+      animation: slideIn 0.8s ease-out;
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      color: #ccc;
+      margin-bottom: 2rem;
+    }
+
+    .school {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #aaa;
+      margin-top: 1rem;
+    }
+
+    .members {
+      font-style: italic;
+      color: #bbb;
+      font-size: 0.95rem;
+      margin-top: 0.5rem;
+    }
+
+    /* Principles Grid */
+    .principles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .principle {
+      background: rgba(128, 0, 128, 0.6);
+      padding: 1.5rem;
+      border-radius: 16px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .principle:hover {
+      transform: translateY(-8px);
+      background: rgba(128, 0, 128, 0.9);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    .principle a {
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+      }
+
+      .principle a {
+        font-size: 1rem;
+      }
+
+      .logo {
+        max-width: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="logo.png" alt="School Logo" class="logo" />
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Smart Study Hub</h1>
+    <h2>Tools, Tips, and Techniques for Academic Excellence</h2>
+    <p class="school">National Higher School of Mathematics</p>
+    <p class="members">Group Members: Chabou Aymen, Badis Ayoub, Didane Youcef, Meniai Adnane, Lhabeche Amina, Djadja, Abdou Rouabhi</p>
+
+    <!-- Study Principles -->
+    <section class="principles">
+      <div class="principle"><a href="time_management1.html">Time Management Matrix</a></div>
+      <div class="principle"><a href="exam_preparation1.html">Exam Preparation</a></div>
+      <div class="principle"><a href="memorization_techniques1.html">Memorization Techniques</a></div>
+      <div class="principle"><a href="note_taking.html">Note-Taking Method Comparison</a></div>
+    </section>
+  </main>
+
+</body>
+</html>
